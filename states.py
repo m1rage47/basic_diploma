@@ -2,8 +2,10 @@ from telebot.handler_backends import State, StatesGroup
 
 history_data = {}
 
+
 class MovieSearchStates(StatesGroup):
     """Состояния для команды /movie_search"""
+
     waiting_for_movie_name = State()  # Ожидаем название фильма
 
 
@@ -23,9 +25,12 @@ class BudgetSearchStates(StatesGroup):
 
 class HistoryStates(StatesGroup):
     """Состояния для команд /history"""
+
     main = State()
+
 
 class CommonStates(StatesGroup):
     """Универсальные состояния"""
+
     waiting_for_genre_name = State()
-    waiting_for_limit = State() # Ожидаем выбор количества фильмов
+    waiting_for_limit = State()  # Ожидаем выбор количества фильмов

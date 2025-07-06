@@ -29,10 +29,10 @@ def movie_limit_markup():
     markup.add(
         types.InlineKeyboardButton("5", callback_data="set_limit_5"),
         types.InlineKeyboardButton("10", callback_data="set_limit_10"),
-        types.InlineKeyboardButton("20", callback_data="set_limit_20")
+        types.InlineKeyboardButton("20", callback_data="set_limit_20"),
     )
     markup.add(
         types.InlineKeyboardButton("50", callback_data="set_limit_50"),
-        types.InlineKeyboardButton("100", callback_data="set_limit_100")
+        types.InlineKeyboardButton("100", callback_data="set_limit_100"),
     )
     return markup
